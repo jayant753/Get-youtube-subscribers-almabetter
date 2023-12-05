@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Subscribers</title>
+    <style>
+        div {
+            padding-left: 50px;
+        }
+
+        li {
+            margin-bottom: 10px
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            background-color: blue;
+            color: white;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Get YouTube subscribers</h1>
+        <p>The APIs provided by this application include the following:</p>
+        <ul>
+            <li>GET <a href="http://localhost:3000/subscribers">/subscribers</a>: Returns an array of all subscribers in the
+                database.</li>
+            <li>GET <a href="http://localhost:3000/subscribers/names">/subscribers/names</a>: Returns an array of subscribers with only two fields name and
+                subscribedChannel</li>
+            <li>
+                    GET
+                    <a href="#" id="subscriber-link">subscribers/<span id="text-align"></span></a>: Returns the details of a subscriber with the given ID.
+            </li>
+            <input type="text" id="input-id">
+            <button onclick="updateLink()">id</button>
+                  
+        </ul>
+    </div>
+    <script>
+        function updateLink() {
+    const inputId = document.getElementById('input-id').value;
+    const link = document.getElementById('subscriber-link');
+    const span = document.getElementById('text-align');
+
+    // Update the href attribute of the link
+    link.href = `http://localhost:3000/subscribers/${inputId}`;
+    
+    // Update the text within the span element
+    span.textContent = inputId;
+  }
+    </script>
+</body>
+
+</html>
