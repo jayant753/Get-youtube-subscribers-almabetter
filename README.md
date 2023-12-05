@@ -10,6 +10,11 @@ The APIs provided by this application include the following:-
 
 -> `GET /subscribers/:id`: Returns the details of a subscriber with the given ID.
 
+## Deployment
+
+[Click Here](https://almabetter-flashcard-genrator.netlify.app/) to see my flashcard generator website.
+
+
 ## Prerequisites
 
 Before running this application, you must have the following installed:
