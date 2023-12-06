@@ -5,7 +5,8 @@ const data = require('./data');
 // Configuration of dotenv
 require('dotenv').config();
 
-const dburl = process.env.DATABASE_URL || "mongodb://127.0.0.1:27017/subscribers";
+const dburl = "mongodb+srv://jayantpachpohe123:okoeYrNuiTqf4uPX@cluster0.krcgnol.mongodb.net/?retryWrites=true&w=majority" ;
+
 // Connecting to MongoDB using Mongoose
 mongoose.connect(dburl, { 
     useNewUrlParser: true, 
